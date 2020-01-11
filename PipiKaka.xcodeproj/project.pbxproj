@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BB4B53323CA38A400C96C3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4B53223CA38A400C96C3E /* AppDelegate.swift */; };
+		9BB4B53523CA38A400C96C3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4B53423CA38A400C96C3E /* SceneDelegate.swift */; };
+		9BB4B53723CA38A400C96C3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4B53623CA38A400C96C3E /* ContentView.swift */; };
+		9BB4B53923CA38A500C96C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB4B53823CA38A500C96C3E /* Assets.xcassets */; };
+		9BB4B53C23CA38A500C96C3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB4B53B23CA38A500C96C3E /* Preview Assets.xcassets */; };
+		9BB4B53F23CA38A500C96C3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB4B53D23CA38A500C96C3E /* LaunchScreen.storyboard */; };
+		9BB4B54A23CA38A500C96C3E /* PipiKakaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4B54923CA38A500C96C3E /* PipiKakaTests.swift */; };
+		9BB4B55523CA38A500C96C3E /* PipiKakaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4B55423CA38A500C96C3E /* PipiKakaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BB4B54623CA38A500C96C3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BB4B52723CA38A400C96C3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BB4B52E23CA38A400C96C3E;
+			remoteInfo = PipiKaka;
+		};
+		9BB4B55123CA38A500C96C3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BB4B52723CA38A400C96C3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BB4B52E23CA38A400C96C3E;
+			remoteInfo = PipiKaka;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9BB4B52F23CA38A400C96C3E /* PipiKaka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PipiKaka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB4B53223CA38A400C96C3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BB4B53423CA38A400C96C3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9BB4B53623CA38A400C96C3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9BB4B53823CA38A500C96C3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BB4B53B23CA38A500C96C3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9BB4B53E23CA38A500C96C3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BB4B54023CA38A500C96C3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BB4B54523CA38A500C96C3E /* PipiKakaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PipiKakaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB4B54923CA38A500C96C3E /* PipiKakaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipiKakaTests.swift; sourceTree = "<group>"; };
+		9BB4B54B23CA38A500C96C3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BB4B55023CA38A500C96C3E /* PipiKakaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PipiKakaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB4B55423CA38A500C96C3E /* PipiKakaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipiKakaUITests.swift; sourceTree = "<group>"; };
+		9BB4B55623CA38A500C96C3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BB4B52C23CA38A400C96C3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BB4B54223CA38A500C96C3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BB4B54D23CA38A500C96C3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BB4B52623CA38A400C96C3E = {
+			isa = PBXGroup;
+			children = (
+				9BB4B53123CA38A400C96C3E /* PipiKaka */,
+				9BB4B54823CA38A500C96C3E /* PipiKakaTests */,
+				9BB4B55323CA38A500C96C3E /* PipiKakaUITests */,
+				9BB4B53023CA38A400C96C3E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9BB4B53023CA38A400C96C3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BB4B52F23CA38A400C96C3E /* PipiKaka.app */,
+				9BB4B54523CA38A500C96C3E /* PipiKakaTests.xctest */,
+				9BB4B55023CA38A500C96C3E /* PipiKakaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BB4B53123CA38A400C96C3E /* PipiKaka */ = {
+			isa = PBXGroup;
+			children = (
+				9BB4B53223CA38A400C96C3E /* AppDelegate.swift */,
+				9BB4B53423CA38A400C96C3E /* SceneDelegate.swift */,
+				9BB4B53623CA38A400C96C3E /* ContentView.swift */,
+				9BB4B53823CA38A500C96C3E /* Assets.xcassets */,
+				9BB4B53D23CA38A500C96C3E /* LaunchScreen.storyboard */,
+				9BB4B54023CA38A500C96C3E /* Info.plist */,
+				9BB4B53A23CA38A500C96C3E /* Preview Content */,
+			);
+			path = PipiKaka;
+			sourceTree = "<group>";
+		};
+		9BB4B53A23CA38A500C96C3E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9BB4B53B23CA38A500C96C3E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9BB4B54823CA38A500C96C3E /* PipiKakaTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BB4B54923CA38A500C96C3E /* PipiKakaTests.swift */,
+				9BB4B54B23CA38A500C96C3E /* Info.plist */,
+			);
+			path = PipiKakaTests;
+			sourceTree = "<group>";
+		};
+		9BB4B55323CA38A500C96C3E /* PipiKakaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9BB4B55423CA38A500C96C3E /* PipiKakaUITests.swift */,
+				9BB4B55623CA38A500C96C3E /* Info.plist */,
+			);
+			path = PipiKakaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BB4B52E23CA38A400C96C3E /* PipiKaka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BB4B55923CA38A500C96C3E /* Build configuration list for PBXNativeTarget "PipiKaka" */;
+			buildPhases = (
+				9BB4B52B23CA38A400C96C3E /* Sources */,
+				9BB4B52C23CA38A400C96C3E /* Frameworks */,
+				9BB4B52D23CA38A400C96C3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PipiKaka;
+			productName = PipiKaka;
+			productReference = 9BB4B52F23CA38A400C96C3E /* PipiKaka.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9BB4B54423CA38A500C96C3E /* PipiKakaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BB4B55C23CA38A500C96C3E /* Build configuration list for PBXNativeTarget "PipiKakaTests" */;
+			buildPhases = (
+				9BB4B54123CA38A500C96C3E /* Sources */,
+				9BB4B54223CA38A500C96C3E /* Frameworks */,
+				9BB4B54323CA38A500C96C3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BB4B54723CA38A500C96C3E /* PBXTargetDependency */,
+			);
+			name = PipiKakaTests;
+			productName = PipiKakaTests;
+			productReference = 9BB4B54523CA38A500C96C3E /* PipiKakaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9BB4B54F23CA38A500C96C3E /* PipiKakaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BB4B55F23CA38A500C96C3E /* Build configuration list for PBXNativeTarget "PipiKakaUITests" */;
+			buildPhases = (
+				9BB4B54C23CA38A500C96C3E /* Sources */,
+				9BB4B54D23CA38A500C96C3E /* Frameworks */,
+				9BB4B54E23CA38A500C96C3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BB4B55223CA38A500C96C3E /* PBXTargetDependency */,
+			);
+			name = PipiKakaUITests;
+			productName = PipiKakaUITests;
+			productReference = 9BB4B55023CA38A500C96C3E /* PipiKakaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BB4B52723CA38A400C96C3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Tobias Pickel";
+				TargetAttributes = {
+					9BB4B52E23CA38A400C96C3E = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					9BB4B54423CA38A500C96C3E = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 9BB4B52E23CA38A400C96C3E;
+					};
+					9BB4B54F23CA38A500C96C3E = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 9BB4B52E23CA38A400C96C3E;
+					};
+				};
+			};
+			buildConfigurationList = 9BB4B52A23CA38A400C96C3E /* Build configuration list for PBXProject "PipiKaka" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BB4B52623CA38A400C96C3E;
+			productRefGroup = 9BB4B53023CA38A400C96C3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BB4B52E23CA38A400C96C3E /* PipiKaka */,
+				9BB4B54423CA38A500C96C3E /* PipiKakaTests */,
+				9BB4B54F23CA38A500C96C3E /* PipiKakaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BB4B52D23CA38A400C96C3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB4B53F23CA38A500C96C3E /* LaunchScreen.storyboard in Resources */,
+				9BB4B53C23CA38A500C96C3E /* Preview Assets.xcassets in Resources */,
+				9BB4B53923CA38A500C96C3E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BB4B54323CA38A500C96C3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BB4B54E23CA38A500C96C3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BB4B52B23CA38A400C96C3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB4B53323CA38A400C96C3E /* AppDelegate.swift in Sources */,
+				9BB4B53523CA38A400C96C3E /* SceneDelegate.swift in Sources */,
+				9BB4B53723CA38A400C96C3E /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BB4B54123CA38A500C96C3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB4B54A23CA38A500C96C3E /* PipiKakaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BB4B54C23CA38A500C96C3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB4B55523CA38A500C96C3E /* PipiKakaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BB4B54723CA38A500C96C3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BB4B52E23CA38A400C96C3E /* PipiKaka */;
+			targetProxy = 9BB4B54623CA38A500C96C3E /* PBXContainerItemProxy */;
+		};
+		9BB4B55223CA38A500C96C3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BB4B52E23CA38A400C96C3E /* PipiKaka */;
+			targetProxy = 9BB4B55123CA38A500C96C3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9BB4B53D23CA38A500C96C3E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BB4B53E23CA38A500C96C3E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BB4B55723CA38A500C96C3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9BB4B55823CA38A500C96C3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BB4B55A23CA38A500C96C3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PipiKaka/Preview Content\"";
+				DEVELOPMENT_TEAM = 549FT99K9M;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PipiKaka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tobi.PipiKaka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BB4B55B23CA38A500C96C3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PipiKaka/Preview Content\"";
+				DEVELOPMENT_TEAM = 549FT99K9M;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PipiKaka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tobi.PipiKaka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9BB4B55D23CA38A500C96C3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 549FT99K9M;
+				INFOPLIST_FILE = PipiKakaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tobi.PipiKakaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PipiKaka.app/PipiKaka";
+			};
+			name = Debug;
+		};
+		9BB4B55E23CA38A500C96C3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 549FT99K9M;
+				INFOPLIST_FILE = PipiKakaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tobi.PipiKakaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PipiKaka.app/PipiKaka";
+			};
+			name = Release;
+		};
+		9BB4B56023CA38A500C96C3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 549FT99K9M;
+				INFOPLIST_FILE = PipiKakaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tobi.PipiKakaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PipiKaka;
+			};
+			name = Debug;
+		};
+		9BB4B56123CA38A500C96C3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 549FT99K9M;
+				INFOPLIST_FILE = PipiKakaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tobi.PipiKakaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PipiKaka;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BB4B52A23CA38A400C96C3E /* Build configuration list for PBXProject "PipiKaka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BB4B55723CA38A500C96C3E /* Debug */,
+				9BB4B55823CA38A500C96C3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BB4B55923CA38A500C96C3E /* Build configuration list for PBXNativeTarget "PipiKaka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BB4B55A23CA38A500C96C3E /* Debug */,
+				9BB4B55B23CA38A500C96C3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BB4B55C23CA38A500C96C3E /* Build configuration list for PBXNativeTarget "PipiKakaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BB4B55D23CA38A500C96C3E /* Debug */,
+				9BB4B55E23CA38A500C96C3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BB4B55F23CA38A500C96C3E /* Build configuration list for PBXNativeTarget "PipiKakaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BB4B56023CA38A500C96C3E /* Debug */,
+				9BB4B56123CA38A500C96C3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BB4B52723CA38A400C96C3E /* Project object */;
+}
