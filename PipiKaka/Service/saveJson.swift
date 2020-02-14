@@ -8,14 +8,14 @@
 
 import Foundation
 import UIKit
-        
+
 func saveJSON<T: Codable>(named: String, object: T) {
     do {
         let fileURL = try FileManager.default
             .url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
             .appendingPathComponent(named)
         let encoder = try JSONEncoder().encode(object)
-        
+
         try encoder.write(to: fileURL)
     } catch {
         print("JSONSave error of \(error)")
@@ -23,13 +23,13 @@ func saveJSON<T: Codable>(named: String, object: T) {
 }
 
 func readJSON<T: Codable>(named: String, _ object: T.Type) -> T? {
-     do {
-         let fileURL = try FileManager.default
-                .url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-                .appendingPathComponent(named)
-         let data = try Data(contentsOf: fileURL)
+    do {
+        let fileURL = try FileManager.default
+            .url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+            .appendingPathComponent(named)
+        let data = try Data(contentsOf: fileURL)
 
-         let object = try JSONDecoder().decode(T.self, from: data)
+        let object = try JSONDecoder().decode(T.self, from: data)
 
         return object
     } catch {

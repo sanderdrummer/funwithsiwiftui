@@ -14,20 +14,19 @@ struct Day: Codable, Identifiable, Hashable, Comparable {
     static func < (lhs: Day, rhs: Day) -> Bool {
         return lhs.date < rhs.date
     }
-    
+
     var id: String = getDay(date: Date())
     var date = Date()
     var title: String {
-        return formatTime(self.date)
+        return formatTime(date)
     }
-
 }
 
 let dayFormatter = DateFormatter()
 
 func getDay(date: Date) -> String {
-    dayFormatter.dateFormat = "DD_MM_yyyy";
-    return dayFormatter.string(from:date);
+    dayFormatter.dateFormat = "DD_MM_yyyy"
+    return dayFormatter.string(from: date)
 }
 
 func formatTime(_ date: Date) -> String {
@@ -37,29 +36,29 @@ func formatTime(_ date: Date) -> String {
 }
 
 struct DayPicker: View {
-    
-    @State var days: Dictionary<String, Day> = [:]
-    
+    @State var days: [String: Day] = [:]
+
     var body: some View {
-        VStack{
+        VStack {
             NavigationView {
-                VStack{
+                VStack {
                     List(days.values.sorted()) { day in
                         NavigationLink(destination: LogView(state: LogState(fileName: day.id, title: day.title)), label: {
                             Text(day.title)
+                            HStack { Text("Hi") }
                         })
                     }
                 }.navigationBarItems(trailing:
                     Button(action: {
-                        let nextDay = Day();
-                        self.days.updateValue(nextDay, forKey: nextDay.id);
+                        let nextDay = Day()
+                        self.days.updateValue(nextDay, forKey: nextDay.id)
                         saveJSON(named: dayPath, object: self.days)
-                    }, label: {Text("heute tracken")})
+                    }, label: { Text("heute tracken") })
                 ).navigationBarTitle("Logs")
             }
-        }.onAppear() {
-            if (self.days.isEmpty) {
-                let savedDays = readJSON(named: dayPath, Dictionary<String, Day>.self)
+        }.onAppear {
+            if self.days.isEmpty {
+                let savedDays = readJSON(named: dayPath, [String: Day].self)
                 self.days = savedDays ?? [:]
             }
         }

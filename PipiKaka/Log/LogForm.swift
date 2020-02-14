@@ -8,20 +8,20 @@
 
 import SwiftUI
 
-
 struct LogTypeForm: View {
     @State var type = ""
     var types = ["Arbeit", "Pipi", "Kaffee", "Mittagspause"]
     var onSubmit: (Log) -> Void
     func reset() {
-        self.type = ""
+        type = ""
     }
+
     var body: some View {
-        Group{
-            if (self.type != "") {
+        Group {
+            if self.type != "" {
                 LogForm(type: type, onCancel: {
                     self.reset()
-                }, onSubmit: {log in
+                }, onSubmit: { log in
                     self.onSubmit(log)
                     self.reset()
                 })
@@ -35,20 +35,19 @@ struct LogTypeForm: View {
 }
 
 struct LogForm: View {
-    
     var type: String
     var startDate = Date()
     var onCancel: () -> Void
     var onSubmit: (Log) -> Void
-    
+
     var body: some View {
-        VStack{
+        VStack {
             Text(type).font(.largeTitle).padding()
-            VStack{
+            VStack {
                 AnimatedTimer(date: self.startDate)
             }
             Spacer()
-            HStack{
+            HStack {
                 Button(action: self.onCancel, label: {
                     Text("abbrechen").padding()
                 }).foregroundColor(Color(.systemRed)).padding()
@@ -61,7 +60,7 @@ struct LogForm: View {
                     Image(systemName: "plus")
                     Text("Timer stoppen")
                 }).padding()
-                
+
             }.padding()
         }
     }
@@ -70,12 +69,12 @@ struct LogForm: View {
 struct LogTypeSelector: View {
     var types: [String] = []
     var onSelect: (_ label: String) -> Void
-    
+
     var body: some View {
         VStack {
             Text("was machst du gerade ?").font(.largeTitle)
-            ForEach(types, id: \.self)  { type in
-                VStack{
+            ForEach(types, id: \.self) { type in
+                VStack {
                     Button(action: {
                         self.onSelect(type)
                     }, label: {
@@ -91,8 +90,8 @@ struct LogTypeSelector: View {
 struct LogTypePicker: View {
     var types: [String] = []
     @Binding var selectedType: Int
-    
-    var body:some View {
+
+    var body: some View {
         Picker(selection: $selectedType, label: Text("Select your activity")) {
             ForEach(0 ..< types.count) {
                 Text(self.types[$0]).padding().shadow(radius: 3).background(Color(.lightGray))
@@ -103,26 +102,25 @@ struct LogTypePicker: View {
 }
 
 struct AnimatedTimer: View {
-    
     var date: Date
     @State var counter = "0"
     @State var isRunning = false
-    
+
     func startTimer() {
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
             self.counter = getTimeDifference(startDate: self.date, stopDate: Date())
-            
-            if (self.isRunning == false) {
+
+            if self.isRunning == false {
                 timer.invalidate()
             }
         }
     }
-    
+
     var body: some View {
-        Counter(counter: self.counter).onAppear{
+        Counter(counter: self.counter).onAppear {
             self.isRunning = true
             self.startTimer()
-        }.onDisappear{
+        }.onDisappear {
             self.isRunning = false
         }
     }
@@ -130,9 +128,9 @@ struct AnimatedTimer: View {
 
 struct LogForm_Previews: PreviewProvider {
     static var previews: some View {
-        Group{
-            LogTypeSelector(types: ["Arbeit", "Pipi"], onSelect: {_ in})
-            LogForm(type: "Arbeit", onCancel: {}, onSubmit: {_ in})
+        Group {
+            LogTypeSelector(types: ["Arbeit", "Pipi"], onSelect: { _ in })
+            LogForm(type: "Arbeit", onCancel: {}, onSubmit: { _ in })
         }
     }
 }
